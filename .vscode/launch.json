@@ -1,0 +1,9 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {"name": "Generate STARTER dataset", "type": "debugpy", "request": "launch", "program": "${workspaceFolder}/run.py", "args": ["starter"], "console": "integratedTerminal"},
+    {"name": "Generate FULL dataset (1M movements)", "type": "debugpy", "request": "launch", "program": "${workspaceFolder}/run.py", "args": ["full"], "console": "integratedTerminal"},
+    {"name": "Reproducibility check (starter)", "type": "debugpy", "request": "launch", "program": "${workspaceFolder}/run.py", "args": ["reproduce"], "console": "integratedTerminal"},
+    {"name": "Run tests", "type": "debugpy", "request": "launch", "program": "${workspaceFolder}/run.py", "args": ["test"], "console": "integratedTerminal"}
+  ]
+}

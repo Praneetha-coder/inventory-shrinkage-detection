@@ -1,0 +1,112 @@
+{
+ "alerts_total": 72,
+ "alerts_by_action": {
+  "INVESTIGATE": 40,
+  "DATA_FIX": 21,
+  "AUTO_CLOSE_BENIGN": 11
+ },
+ "alert_labels": {
+  "TRUE_POSITIVE": 72
+ },
+ "investigate_alert_precision": 1.0,
+ "theft_case_recall_all": 1.0,
+ "theft_case_recall_detectable": 1.0,
+ "benign_cases_wrongly_escalated": 0,
+ "benign_cases": 7,
+ "data_fix_cases_correct": "21/21",
+ "overall_case_decision_accuracy": 1.0,
+ "loss_value_flagged_for_investigation": 13763.98,
+ "true_theft_loss_value": 14201.17,
+ "investigations": {
+  "total": 13,
+  "by_status": {
+   "CLOSED": 13
+  },
+  "by_outcome": {
+   "CONFIRMED_LOSS": 9,
+   "POLICY_BREACH": 4
+  },
+  "confirmed_loss_value": 13701.07
+ },
+ "naive_baseline": {
+  "rule": "escalate every count with variance <= -3 units",
+  "escalations": 43,
+  "precision_vs_theft": 0.6977,
+  "recall_of_theft_counts": 1.0,
+  "benign_trap_counts_flagged": 13
+ },
+ "per_issue_type": [
+  {
+   "issue_type": "ADJUSTMENT_NO_REASON",
+   "cases": 8,
+   "detectable": 8,
+   "correct": 8,
+   "missed": 0,
+   "decision_accuracy": 1.0
+  },
+  {
+   "issue_type": "COUNT_TIMESTAMP_PRECEDES_MOVEMENT",
+   "cases": 5,
+   "detectable": 5,
+   "correct": 5,
+   "missed": 0,
+   "decision_accuracy": 1.0
+  },
+  {
+   "issue_type": "LEGIT_DAMAGE_EVENT",
+   "cases": 3,
+   "detectable": 3,
+   "correct": 3,
+   "missed": 0,
+   "decision_accuracy": 1.0
+  },
+  {
+   "issue_type": "MOVEMENT_WRONG_STORE",
+   "cases": 8,
+   "detectable": 8,
+   "correct": 8,
+   "missed": 0,
+   "decision_accuracy": 1.0
+  },
+  {
+   "issue_type": "REPEATED_ADJUSTMENTS",
+   "cases": 3,
+   "detectable": 3,
+   "correct": 3,
+   "missed": 0,
+   "decision_accuracy": 1.0
+  },
+  {
+   "issue_type": "RETURN_WITHOUT_SALE_ABUSE",
+   "cases": 2,
+   "detectable": 2,
+   "correct": 2,
+   "missed": 0,
+   "decision_accuracy": 1.0
+  },
+  {
+   "issue_type": "TRANSFER_IN_TRANSIT_BOTH_ENDS",
+   "cases": 4,
+   "detectable": 4,
+   "correct": 4,
+   "missed": 0,
+   "decision_accuracy": 1.0
+  },
+  {
+   "issue_type": "UNAUTHORIZED_ADJUSTMENT",
+   "cases": 5,
+   "detectable": 5,
+   "correct": 5,
+   "missed": 0,
+   "decision_accuracy": 1.0
+  },
+  {
+   "issue_type": "UNEXPLAINED_LOSS",
+   "cases": 3,
+   "detectable": 3,
+   "correct": 3,
+   "missed": 0,
+   "decision_accuracy": 1.0
+  }
+ ]
+}

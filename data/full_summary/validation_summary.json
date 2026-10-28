@@ -1,0 +1,1248 @@
+{
+ "total": 203,
+ "passed": 203,
+ "failed": 0,
+ "checks": [
+  {
+   "group": "primary_key",
+   "check": "stores: PK ['store_id'] unique",
+   "passed": true,
+   "detail": "100 rows"
+  },
+  {
+   "group": "required",
+   "check": "stores: required fields non-null",
+   "passed": true,
+   "detail": "{}"
+  },
+  {
+   "group": "enum",
+   "check": "stores.store_type in allowed values",
+   "passed": true,
+   "detail": "<StringArray>\n[]\nLength: 0, dtype: str"
+  },
+  {
+   "group": "enum",
+   "check": "stores.store_format in allowed values",
+   "passed": true,
+   "detail": "<StringArray>\n[]\nLength: 0, dtype: str"
+  },
+  {
+   "group": "enum",
+   "check": "stores.region in allowed values",
+   "passed": true,
+   "detail": "<StringArray>\n[]\nLength: 0, dtype: str"
+  },
+  {
+   "group": "enum",
+   "check": "stores.status in allowed values",
+   "passed": true,
+   "detail": "<StringArray>\n[]\nLength: 0, dtype: str"
+  },
+  {
+   "group": "primary_key",
+   "check": "skus: PK ['sku_id'] unique",
+   "passed": true,
+   "detail": "5000 rows"
+  },
+  {
+   "group": "required",
+   "check": "skus: required fields non-null",
+   "passed": true,
+   "detail": "{}"
+  },
+  {
+   "group": "enum",
+   "check": "skus.category in allowed values",
+   "passed": true,
+   "detail": "<StringArray>\n[]\nLength: 0, dtype: str"
+  },
+  {
+   "group": "enum",
+   "check": "skus.status in allowed values",
+   "passed": true,
+   "detail": "<StringArray>\n[]\nLength: 0, dtype: str"
+  },
+  {
+   "group": "primary_key",
+   "check": "store_skus: PK ['store_id', 'sku_id'] unique",
+   "passed": true,
+   "detail": "104000 rows"
+  },
+  {
+   "group": "required",
+   "check": "store_skus: required fields non-null",
+   "passed": true,
+   "detail": "{}"
+  },
+  {
+   "group": "enum",
+   "check": "store_skus.status in allowed values",
+   "passed": true,
+   "detail": "<StringArray>\n[]\nLength: 0, dtype: str"
+  },
+  {
+   "group": "primary_key",
+   "check": "employees: PK ['employee_id'] unique",
+   "passed": true,
+   "detail": "809 rows"
+  },
+  {
+   "group": "required",
+   "check": "employees: required fields non-null",
+   "passed": true,
+   "detail": "{}"
+  },
+  {
+   "group": "enum",
+   "check": "employees.employment_status in allowed values",
+   "passed": true,
+   "detail": "<StringArray>\n[]\nLength: 0, dtype: str"
+  },
+  {
+   "group": "primary_key",
+   "check": "employee_roles: PK ['employee_role_id'] unique",
+   "passed": true,
+   "detail": "868 rows"
+  },
+  {
+   "group": "required",
+   "check": "employee_roles: required fields non-null",
+   "passed": true,
+   "detail": "{}"
+  },
+  {
+   "group": "enum",
+   "check": "employee_roles.role_code in allowed values",
+   "passed": true,
+   "detail": "<StringArray>\n[]\nLength: 0, dtype: str"
+  },
+  {
+   "group": "primary_key",
+   "check": "shifts: PK ['shift_id'] unique",
+   "passed": true,
+   "detail": "108600 rows"
+  },
+  {
+   "group": "required",
+   "check": "shifts: required fields non-null",
+   "passed": true,
+   "detail": "{}"
+  },
+  {
+   "group": "enum",
+   "check": "shifts.shift_type in allowed values",
+   "passed": true,
+   "detail": "<StringArray>\n[]\nLength: 0, dtype: str"
+  },
+  {
+   "group": "enum",
+   "check": "shifts.role_on_shift in allowed values",
+   "passed": true,
+   "detail": "<StringArray>\n[]\nLength: 0, dtype: str"
+  },
+  {
+   "group": "enum",
+   "check": "shifts.status in allowed values",
+   "passed": true,
+   "detail": "<StringArray>\n[]\nLength: 0, dtype: str"
+  },
+  {
+   "group": "primary_key",
+   "check": "promotions: PK ['promotion_id'] unique",
+   "passed": true,
+   "detail": "100 rows"
+  },
+  {
+   "group": "required",
+   "check": "promotions: required fields non-null",
+   "passed": true,
+   "detail": "{}"
+  },
+  {
+   "group": "enum",
+   "check": "promotions.status in allowed values",
+   "passed": true,
+   "detail": "<StringArray>\n[]\nLength: 0, dtype: str"
+  },
+  {
+   "group": "primary_key",
+   "check": "promotion_skus: PK ['promotion_id', 'sku_id'] unique",
+   "passed": true,
+   "detail": "2592 rows"
+  },
+  {
+   "group": "required",
+   "check": "promotion_skus: required fields non-null",
+   "passed": true,
+   "detail": "{}"
+  },
+  {
+   "group": "primary_key",
+   "check": "inventory_movements: PK ['movement_id'] unique",
+   "passed": true,
+   "detail": "1000000 rows"
+  },
+  {
+   "group": "required",
+   "check": "inventory_movements: required fields non-null",
+   "passed": true,
+   "detail": "{}"
+  },
+  {
+   "group": "enum",
+   "check": "inventory_movements.movement_type in allowed values",
+   "passed": true,
+   "detail": "<StringArray>\n[]\nLength: 0, dtype: str"
+  },
+  {
+   "group": "enum",
+   "check": "inventory_movements.reason_code in allowed values",
+   "passed": true,
+   "detail": "<StringArray>\n[]\nLength: 0, dtype: str"
+  },
+  {
+   "group": "primary_key",
+   "check": "cycle_counts: PK ['count_id'] unique",
+   "passed": true,
+   "detail": "20000 rows"
+  },
+  {
+   "group": "required",
+   "check": "cycle_counts: required fields non-null",
+   "passed": true,
+   "detail": "{}"
+  },
+  {
+   "group": "enum",
+   "check": "cycle_counts.count_type in allowed values",
+   "passed": true,
+   "detail": "<StringArray>\n[]\nLength: 0, dtype: str"
+  },
+  {
+   "group": "enum",
+   "check": "cycle_counts.status in allowed values",
+   "passed": true,
+   "detail": "<StringArray>\n[]\nLength: 0, dtype: str"
+  },
+  {
+   "group": "primary_key",
+   "check": "returns: PK ['return_id'] unique",
+   "passed": true,
+   "detail": "70800 rows"
+  },
+  {
+   "group": "required",
+   "check": "returns: required fields non-null",
+   "passed": true,
+   "detail": "{}"
+  },
+  {
+   "group": "enum",
+   "check": "returns.reason_code in allowed values",
+   "passed": true,
+   "detail": "<StringArray>\n[]\nLength: 0, dtype: str"
+  },
+  {
+   "group": "enum",
+   "check": "returns.disposition in allowed values",
+   "passed": true,
+   "detail": "<StringArray>\n[]\nLength: 0, dtype: str"
+  },
+  {
+   "group": "enum",
+   "check": "returns.status in allowed values",
+   "passed": true,
+   "detail": "<StringArray>\n[]\nLength: 0, dtype: str"
+  },
+  {
+   "group": "primary_key",
+   "check": "shrinkage_alerts: PK ['alert_id'] unique",
+   "passed": true,
+   "detail": "735 rows"
+  },
+  {
+   "group": "required",
+   "check": "shrinkage_alerts: required fields non-null",
+   "passed": true,
+   "detail": "{}"
+  },
+  {
+   "group": "enum",
+   "check": "shrinkage_alerts.alert_type in allowed values",
+   "passed": true,
+   "detail": "<StringArray>\n[]\nLength: 0, dtype: str"
+  },
+  {
+   "group": "enum",
+   "check": "shrinkage_alerts.severity in allowed values",
+   "passed": true,
+   "detail": "<StringArray>\n[]\nLength: 0, dtype: str"
+  },
+  {
+   "group": "enum",
+   "check": "shrinkage_alerts.recommended_action in allowed values",
+   "passed": true,
+   "detail": "<StringArray>\n[]\nLength: 0, dtype: str"
+  },
+  {
+   "group": "enum",
+   "check": "shrinkage_alerts.status in allowed values",
+   "passed": true,
+   "detail": "<StringArray>\n[]\nLength: 0, dtype: str"
+  },
+  {
+   "group": "primary_key",
+   "check": "alert_evidence: PK ['alert_id', 'evidence_type', 'evidence_id'] unique",
+   "passed": true,
+   "detail": "1742 rows"
+  },
+  {
+   "group": "required",
+   "check": "alert_evidence: required fields non-null",
+   "passed": true,
+   "detail": "{}"
+  },
+  {
+   "group": "enum",
+   "check": "alert_evidence.evidence_type in allowed values",
+   "passed": true,
+   "detail": "<StringArray>\n[]\nLength: 0, dtype: str"
+  },
+  {
+   "group": "enum",
+   "check": "alert_evidence.evidence_role in allowed values",
+   "passed": true,
+   "detail": "<StringArray>\n[]\nLength: 0, dtype: str"
+  },
+  {
+   "group": "primary_key",
+   "check": "alert_status_events: PK ['alert_event_id'] unique",
+   "passed": true,
+   "detail": "2147 rows"
+  },
+  {
+   "group": "required",
+   "check": "alert_status_events: required fields non-null",
+   "passed": true,
+   "detail": "{}"
+  },
+  {
+   "group": "enum",
+   "check": "alert_status_events.to_status in allowed values",
+   "passed": true,
+   "detail": "<StringArray>\n[]\nLength: 0, dtype: str"
+  },
+  {
+   "group": "primary_key",
+   "check": "investigations: PK ['investigation_id'] unique",
+   "passed": true,
+   "detail": "89 rows"
+  },
+  {
+   "group": "required",
+   "check": "investigations: required fields non-null",
+   "passed": true,
+   "detail": "{}"
+  },
+  {
+   "group": "enum",
+   "check": "investigations.alert_family in allowed values",
+   "passed": true,
+   "detail": "<StringArray>\n[]\nLength: 0, dtype: str"
+  },
+  {
+   "group": "enum",
+   "check": "investigations.priority in allowed values",
+   "passed": true,
+   "detail": "<StringArray>\n[]\nLength: 0, dtype: str"
+  },
+  {
+   "group": "enum",
+   "check": "investigations.status in allowed values",
+   "passed": true,
+   "detail": "<StringArray>\n[]\nLength: 0, dtype: str"
+  },
+  {
+   "group": "enum",
+   "check": "investigations.outcome in allowed values",
+   "passed": true,
+   "detail": "<StringArray>\n[]\nLength: 0, dtype: str"
+  },
+  {
+   "group": "primary_key",
+   "check": "investigation_alerts: PK ['investigation_id', 'alert_id'] unique",
+   "passed": true,
+   "detail": "187 rows"
+  },
+  {
+   "group": "required",
+   "check": "investigation_alerts: required fields non-null",
+   "passed": true,
+   "detail": "{}"
+  },
+  {
+   "group": "primary_key",
+   "check": "investigation_events: PK ['investigation_event_id'] unique",
+   "passed": true,
+   "detail": "267 rows"
+  },
+  {
+   "group": "required",
+   "check": "investigation_events: required fields non-null",
+   "passed": true,
+   "detail": "{}"
+  },
+  {
+   "group": "enum",
+   "check": "investigation_events.to_status in allowed values",
+   "passed": true,
+   "detail": "<StringArray>\n[]\nLength: 0, dtype: str"
+  },
+  {
+   "group": "primary_key",
+   "check": "ground_truth_cases: PK ['gt_id'] unique",
+   "passed": true,
+   "detail": "611 rows"
+  },
+  {
+   "group": "required",
+   "check": "ground_truth_cases: required fields non-null",
+   "passed": true,
+   "detail": "{}"
+  },
+  {
+   "group": "enum",
+   "check": "ground_truth_cases.issue_type in allowed values",
+   "passed": true,
+   "detail": "<StringArray>\n[]\nLength: 0, dtype: str"
+  },
+  {
+   "group": "enum",
+   "check": "ground_truth_cases.case_group in allowed values",
+   "passed": true,
+   "detail": "<StringArray>\n[]\nLength: 0, dtype: str"
+  },
+  {
+   "group": "enum",
+   "check": "ground_truth_cases.expected_decision in allowed values",
+   "passed": true,
+   "detail": "<StringArray>\n[]\nLength: 0, dtype: str"
+  },
+  {
+   "group": "primary_key",
+   "check": "ground_truth_links: PK ['gt_id', 'entity_type', 'entity_id'] unique",
+   "passed": true,
+   "detail": "1305 rows"
+  },
+  {
+   "group": "required",
+   "check": "ground_truth_links: required fields non-null",
+   "passed": true,
+   "detail": "{}"
+  },
+  {
+   "group": "primary_key",
+   "check": "ground_truth_count_causes: PK ['count_id'] unique",
+   "passed": true,
+   "detail": "20000 rows"
+  },
+  {
+   "group": "required",
+   "check": "ground_truth_count_causes: required fields non-null",
+   "passed": true,
+   "detail": "{}"
+  },
+  {
+   "group": "primary_key",
+   "check": "ground_truth_alert_labels: PK ['alert_id'] unique",
+   "passed": true,
+   "detail": "735 rows"
+  },
+  {
+   "group": "required",
+   "check": "ground_truth_alert_labels: required fields non-null",
+   "passed": true,
+   "detail": "{}"
+  },
+  {
+   "group": "id_format",
+   "check": "stores.store_id matches ^STORE-\\d{6}$",
+   "passed": true,
+   "detail": "0"
+  },
+  {
+   "group": "id_format",
+   "check": "skus.sku_id matches ^SKU-\\d{6}$",
+   "passed": true,
+   "detail": "0"
+  },
+  {
+   "group": "id_format",
+   "check": "employees.employee_id matches ^EMP-\\d{6}$",
+   "passed": true,
+   "detail": "0"
+  },
+  {
+   "group": "id_format",
+   "check": "employee_roles.employee_role_id matches ^ERL-\\d{6}$",
+   "passed": true,
+   "detail": "0"
+  },
+  {
+   "group": "id_format",
+   "check": "shifts.shift_id matches ^SHIFT-\\d{7}$",
+   "passed": true,
+   "detail": "0"
+  },
+  {
+   "group": "id_format",
+   "check": "promotions.promotion_id matches ^PROMO-\\d{6}$",
+   "passed": true,
+   "detail": "0"
+  },
+  {
+   "group": "id_format",
+   "check": "inventory_movements.movement_id matches ^MOV-2026-\\d{8}$",
+   "passed": true,
+   "detail": "0"
+  },
+  {
+   "group": "id_format",
+   "check": "inventory_movements.transfer_id matches ^XFR-2026-\\d{6}$",
+   "passed": true,
+   "detail": "0"
+  },
+  {
+   "group": "id_format",
+   "check": "cycle_counts.count_id matches ^CNT-2026-\\d{6}$",
+   "passed": true,
+   "detail": "0"
+  },
+  {
+   "group": "id_format",
+   "check": "returns.return_id matches ^RET-2026-\\d{6}$",
+   "passed": true,
+   "detail": "0"
+  },
+  {
+   "group": "id_format",
+   "check": "shrinkage_alerts.alert_id matches ^SHR-2026-\\d{6}$",
+   "passed": true,
+   "detail": "0"
+  },
+  {
+   "group": "id_format",
+   "check": "investigations.investigation_id matches ^INV-2026-\\d{6}$",
+   "passed": true,
+   "detail": "0"
+  },
+  {
+   "group": "id_format",
+   "check": "alert_status_events.alert_event_id matches ^ALE-2026-\\d{6}$",
+   "passed": true,
+   "detail": "0"
+  },
+  {
+   "group": "id_format",
+   "check": "investigation_events.investigation_event_id matches ^IVE-2026-\\d{6}$",
+   "passed": true,
+   "detail": "0"
+  },
+  {
+   "group": "id_format",
+   "check": "ground_truth_cases.gt_id matches ^GT-\\d{6}$",
+   "passed": true,
+   "detail": "0"
+  },
+  {
+   "group": "id_format",
+   "check": "inventory_movements.movement_id counters contiguous 1..N, zero-padded, no gaps",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "id_format",
+   "check": "cycle_counts.count_id counters contiguous 1..N, zero-padded, no gaps",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "id_format",
+   "check": "returns.return_id counters contiguous 1..N, zero-padded, no gaps",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "id_format",
+   "check": "shrinkage_alerts.alert_id counters contiguous 1..N, zero-padded, no gaps",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "id_format",
+   "check": "investigations.investigation_id counters contiguous 1..N, zero-padded, no gaps",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "id_format",
+   "check": "alert_status_events.alert_event_id counters contiguous 1..N, zero-padded, no gaps",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "id_format",
+   "check": "investigation_events.investigation_event_id counters contiguous 1..N, zero-padded, no gaps",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "id_format",
+   "check": "shifts.shift_id counters contiguous 1..N, zero-padded, no gaps",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "foreign_key",
+   "check": "store_skus.store_id -> stores.store_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "store_skus.sku_id -> skus.sku_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "employees.home_store_id -> stores.store_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "employee_roles.employee_id -> employees.employee_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "employee_roles.store_id -> stores.store_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "shifts.store_id -> stores.store_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "shifts.employee_id -> employees.employee_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "promotions.owner_employee_id -> employees.employee_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "promotion_skus.promotion_id -> promotions.promotion_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "promotion_skus.sku_id -> skus.sku_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "inventory_movements.store_id -> stores.store_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "inventory_movements.sku_id -> skus.sku_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "inventory_movements.shift_id -> shifts.shift_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "inventory_movements.employee_id -> employees.employee_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "inventory_movements.counterparty_store_id -> stores.store_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "inventory_movements.promotion_id -> promotions.promotion_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "cycle_counts.store_id -> stores.store_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "cycle_counts.sku_id -> skus.sku_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "cycle_counts.counted_by_employee_id -> employees.employee_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "cycle_counts.shift_id -> shifts.shift_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "returns.store_id -> stores.store_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "returns.sku_id -> skus.sku_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "returns.original_sale_movement_id -> inventory_movements.movement_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "returns.return_movement_id -> inventory_movements.movement_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "returns.processed_by_employee_id -> employees.employee_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "returns.approved_by_employee_id -> employees.employee_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "shrinkage_alerts.store_id -> stores.store_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "shrinkage_alerts.sku_id -> skus.sku_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "shrinkage_alerts.employee_id -> employees.employee_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "shrinkage_alerts.assigned_to_employee_id -> employees.employee_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "alert_evidence.alert_id -> shrinkage_alerts.alert_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "alert_status_events.alert_id -> shrinkage_alerts.alert_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "alert_status_events.actor_employee_id -> employees.employee_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "investigations.store_id -> stores.store_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "investigations.assigned_to_employee_id -> employees.employee_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "investigation_alerts.investigation_id -> investigations.investigation_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "investigation_alerts.alert_id -> shrinkage_alerts.alert_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "investigation_events.investigation_id -> investigations.investigation_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "investigation_events.actor_employee_id -> employees.employee_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "ground_truth_cases.store_id -> stores.store_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "ground_truth_links.gt_id -> ground_truth_cases.gt_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "ground_truth_count_causes.count_id -> cycle_counts.count_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "ground_truth_alert_labels.alert_id -> shrinkage_alerts.alert_id",
+   "passed": true,
+   "detail": "0 orphans"
+  },
+  {
+   "group": "foreign_key",
+   "check": "inventory_movements: (store_id, sku_id) exists in store_skus",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "foreign_key",
+   "check": "cycle_counts: (store_id, sku_id) exists in store_skus",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "foreign_key",
+   "check": "alert_evidence MOVEMENT ids exist in inventory_movements.movement_id",
+   "passed": true,
+   "detail": "996"
+  },
+  {
+   "group": "foreign_key",
+   "check": "alert_evidence COUNT ids exist in cycle_counts.count_id",
+   "passed": true,
+   "detail": "190"
+  },
+  {
+   "group": "foreign_key",
+   "check": "alert_evidence RETURN ids exist in returns.return_id",
+   "passed": true,
+   "detail": "46"
+  },
+  {
+   "group": "foreign_key",
+   "check": "alert_evidence SHIFT ids exist in shifts.shift_id",
+   "passed": true,
+   "detail": "460"
+  },
+  {
+   "group": "foreign_key",
+   "check": "alert_evidence TRANSFER ids exist in inventory_movements.transfer_id",
+   "passed": true,
+   "detail": "50"
+  },
+  {
+   "group": "foreign_key",
+   "check": "ground_truth_links MOVEMENT ids exist",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "foreign_key",
+   "check": "ground_truth_links COUNT ids exist",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "foreign_key",
+   "check": "ground_truth_links TRANSFER ids exist",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "domain",
+   "check": "movement sign matches movement_type",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "domain",
+   "check": "warehouses record no SALE / CUSTOMER_RETURN",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "lineage",
+   "check": "movement.employee_id = shift.employee_id",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "date_order",
+   "check": "posted_ts falls inside its shift window",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "anomaly_reconciliation",
+   "check": "movements whose store <> shift store == labelled MOVEMENT_WRONG_STORE",
+   "passed": true,
+   "detail": "400 vs 400"
+  },
+  {
+   "group": "anomaly_reconciliation",
+   "check": "adjustments without reason == labelled ADJUSTMENT_NO_REASON",
+   "passed": true,
+   "detail": "60 vs 60"
+  },
+  {
+   "group": "domain",
+   "check": "reason_code present for DAMAGE / CUSTOMER_RETURN (and every non-exception ADJUSTMENT)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "date_order",
+   "check": "posted_ts >= movement_ts except labelled early-posted transfer receipts",
+   "passed": true,
+   "detail": "early=25, late=25, labelled=25"
+  },
+  {
+   "group": "lifecycle",
+   "check": "each transfer_id has exactly 1 OUT + 1 IN, equal quantity, same SKU",
+   "passed": true,
+   "detail": "45000 transfers"
+  },
+  {
+   "group": "lifecycle",
+   "check": "transfer legs: counterparties mirror each other and IN movement_ts is after OUT movement_ts",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "domain",
+   "check": "promotion sales: SKU in promotion_skus and date inside promo window",
+   "passed": true,
+   "detail": "181681"
+  },
+  {
+   "group": "reconciliation",
+   "check": "book running balance (opening + movements) never negative",
+   "passed": true,
+   "detail": "min=3"
+  },
+  {
+   "group": "reconciliation",
+   "check": "stock equation: closing = opening + sum(movements) and >= 0 for every store/SKU",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "reconciliation",
+   "check": "cycle_counts.book_qty = opening + movements posted <= count_ts (independent recomputation)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "reconciliation",
+   "check": "variance_units = counted_qty - book_qty",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "reconciliation",
+   "check": "variance_value = variance_units * unit_cost",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "reconciliation",
+   "check": "count status derived from variance rule",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "reconciliation",
+   "check": "every count variance exactly decomposes into the six ground-truth causes",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "date_order",
+   "check": "count entered_ts >= count_ts",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "lineage",
+   "check": "count shift belongs to the counting employee",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "authorization",
+   "check": "every count is performed by an employee with can_perform_counts",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "date_order",
+   "check": "employee_roles: effective ranges ordered and non-overlapping",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "date_order",
+   "check": "promotions start_date <= end_date; shifts start < end",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "lineage",
+   "check": "shift.role_on_shift equals the employee's effective role on shift_date",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "date_order",
+   "check": "return_ts is after the original sale",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "reconciliation",
+   "check": "return quantity <= original sale quantity; same store and SKU",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "duplicates",
+   "check": "each sale has at most one return; each return movement is used once",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "lifecycle",
+   "check": "return: RESTOCK <=> return_movement_id set <=> status RESTOCKED",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "reconciliation",
+   "check": "every CUSTOMER_RETURN movement has exactly one Return row",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "reconciliation",
+   "check": "refund_amount = qty * unit_price * (1 - promo discount)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "lifecycle",
+   "check": "alert transitions follow the allowed state machine",
+   "passed": true,
+   "detail": "2147"
+  },
+  {
+   "group": "lifecycle",
+   "check": "alert event timestamps non-decreasing and chain (from = previous to)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "lifecycle",
+   "check": "alert.status equals its last event",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "lifecycle",
+   "check": "investigation transitions follow the allowed state machine",
+   "passed": true,
+   "detail": "267"
+  },
+  {
+   "group": "lifecycle",
+   "check": "investigation event timestamps non-decreasing and chain (from = previous to)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "lifecycle",
+   "check": "investigation.status equals its last event",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "lifecycle",
+   "check": "investigation outcome/closed_ts set iff CLOSED",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "lifecycle",
+   "check": "only INVESTIGATE alerts are linked to investigations",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "lifecycle",
+   "check": "every INVESTIGATE alert belongs to an investigation",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "date_order",
+   "check": "investigation opened_ts >= earliest linked alert created_ts",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "reconciliation",
+   "check": "COUNT_VARIANCE alerts: estimated loss = -(variance of primary count)",
+   "passed": true,
+   "detail": "160"
+  },
+  {
+   "group": "reconciliation",
+   "check": "alert severity derived from estimated_loss_value",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "evidence",
+   "check": "every alert has >=1 PRIMARY evidence row and a reason_text citing a record id",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "duplicates",
+   "check": "no duplicate alerts (same rule + primary evidence)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "duplicates",
+   "check": "exact duplicate movements (same store, SKU, type, qty, second, employee) < 0.5% of rows",
+   "passed": true,
+   "detail": "0.0001%"
+  },
+  {
+   "group": "duplicates",
+   "check": "store_skus / employee_roles natural keys unique",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "ground_truth",
+   "check": "no ground-truth column exists in any input table",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "group": "ground_truth",
+   "check": "no 'GT-' identifier appears in alert text / notes of the input tables",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "ground_truth",
+   "check": "every ground-truth case has >=1 linked record",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "group": "ground_truth",
+   "check": "all alerts have a label row",
+   "passed": true,
+   "detail": ""
+  }
+ ],
+ "row_counts": {
+  "stores": 100,
+  "skus": 5000,
+  "store_skus": 104000,
+  "employees": 809,
+  "employee_roles": 868,
+  "shifts": 108600,
+  "promotions": 100,
+  "promotion_skus": 2592,
+  "inventory_movements": 1000000,
+  "cycle_counts": 20000,
+  "returns": 70800,
+  "shrinkage_alerts": 735,
+  "alert_evidence": 1742,
+  "alert_status_events": 2147,
+  "investigations": 89,
+  "investigation_alerts": 187,
+  "investigation_events": 267,
+  "ground_truth_cases": 611,
+  "ground_truth_links": 1305,
+  "ground_truth_count_causes": 20000,
+  "ground_truth_alert_labels": 735
+ }
+}

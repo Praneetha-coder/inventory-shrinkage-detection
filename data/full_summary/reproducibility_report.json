@@ -1,0 +1,163 @@
+{
+ "seed": 20261022,
+ "identical": true,
+ "files_compared": 26,
+ "files": {
+  "evaluation_metrics.json": {
+   "rows": null,
+   "sha256_run1": "b1a78089f6364e604db7dcdb1aa550deec7da263ba9cee33510a5d72be74e1f5",
+   "sha256_run2": "b1a78089f6364e604db7dcdb1aa550deec7da263ba9cee33510a5d72be74e1f5",
+   "match": true
+  },
+  "validation_summary.json": {
+   "rows": null,
+   "sha256_run1": "6162ab274e984aac9dabf1a2815756e273f4d74356f521277629024ca0e8f755",
+   "sha256_run2": "6162ab274e984aac9dabf1a2815756e273f4d74356f521277629024ca0e8f755",
+   "match": true
+  },
+  "sql/schema.sql": {
+   "rows": null,
+   "sha256_run1": "e0abbc4ddc74117c36bf1a1018759093d55b20c06b3efa090286310b7857f1d1",
+   "sha256_run2": "e0abbc4ddc74117c36bf1a1018759093d55b20c06b3efa090286310b7857f1d1",
+   "match": true
+  },
+  "sql/schema_ground_truth.sql": {
+   "rows": null,
+   "sha256_run1": "133b513d28920598f5b94ac0c30f4f0532b1e4f2a91dd8b181725b922887f5b1",
+   "sha256_run2": "133b513d28920598f5b94ac0c30f4f0532b1e4f2a91dd8b181725b922887f5b1",
+   "match": true
+  },
+  "ground_truth/ground_truth_alert_labels.csv": {
+   "rows": 735,
+   "sha256_run1": "637414337eb854444bd16fe7381db6a4d857b9b565278e5afe8e4bfde8487679",
+   "sha256_run2": "637414337eb854444bd16fe7381db6a4d857b9b565278e5afe8e4bfde8487679",
+   "match": true
+  },
+  "ground_truth/ground_truth_cases.csv": {
+   "rows": 611,
+   "sha256_run1": "b9e3b59657c8adc493e1306c1118a485d1007287d96561cb2515141604c33ba4",
+   "sha256_run2": "b9e3b59657c8adc493e1306c1118a485d1007287d96561cb2515141604c33ba4",
+   "match": true
+  },
+  "ground_truth/ground_truth_cases.json": {
+   "rows": null,
+   "sha256_run1": "af24f701ad596593767cfd5977d3a3a78f31bb308197fbbfebe4f16deb9e1a01",
+   "sha256_run2": "af24f701ad596593767cfd5977d3a3a78f31bb308197fbbfebe4f16deb9e1a01",
+   "match": true
+  },
+  "ground_truth/ground_truth_count_causes.csv": {
+   "rows": 20000,
+   "sha256_run1": "47f9784b33f873e2e98f2d5eb0f5981db688089142792eaa31f8d3e838e39878",
+   "sha256_run2": "47f9784b33f873e2e98f2d5eb0f5981db688089142792eaa31f8d3e838e39878",
+   "match": true
+  },
+  "ground_truth/ground_truth_links.csv": {
+   "rows": 1305,
+   "sha256_run1": "6b3806f9e5147c3f0bd79d8ebf571db6e38725bd64754423cb1585e5e08903f6",
+   "sha256_run2": "6b3806f9e5147c3f0bd79d8ebf571db6e38725bd64754423cb1585e5e08903f6",
+   "match": true
+  },
+  "input/alert_evidence.csv": {
+   "rows": 1742,
+   "sha256_run1": "99947b37512f58f2356e53e3d4ba5188bc2164c65831bc422cb92f6e986454be",
+   "sha256_run2": "99947b37512f58f2356e53e3d4ba5188bc2164c65831bc422cb92f6e986454be",
+   "match": true
+  },
+  "input/alert_status_events.csv": {
+   "rows": 2147,
+   "sha256_run1": "e667c08153f8f434bc2a0813df9081f187e948e9c65c3a148bd6dcc4c2bcb79f",
+   "sha256_run2": "e667c08153f8f434bc2a0813df9081f187e948e9c65c3a148bd6dcc4c2bcb79f",
+   "match": true
+  },
+  "input/cycle_counts.csv": {
+   "rows": 20000,
+   "sha256_run1": "6c17578973ea3296e10de19fbb89492720e96830f5f5392a245622a38cf3b155",
+   "sha256_run2": "6c17578973ea3296e10de19fbb89492720e96830f5f5392a245622a38cf3b155",
+   "match": true
+  },
+  "input/employee_roles.csv": {
+   "rows": 868,
+   "sha256_run1": "50934ea4dc78ae1f4a6fa30f6f8486aff63409046df67dc5112a1b8ea3224eff",
+   "sha256_run2": "50934ea4dc78ae1f4a6fa30f6f8486aff63409046df67dc5112a1b8ea3224eff",
+   "match": true
+  },
+  "input/employees.csv": {
+   "rows": 809,
+   "sha256_run1": "0be7ee9402ffc19150316ba86aa3556737155be1b7ce8c5e9ef5e2c0ba2bfa7e",
+   "sha256_run2": "0be7ee9402ffc19150316ba86aa3556737155be1b7ce8c5e9ef5e2c0ba2bfa7e",
+   "match": true
+  },
+  "input/inventory_movements.csv": {
+   "rows": 1000000,
+   "sha256_run1": "cf95d0cf451b749ecdeeb392237dbd68d7703ae21077d564f7909e56d03f3167",
+   "sha256_run2": "cf95d0cf451b749ecdeeb392237dbd68d7703ae21077d564f7909e56d03f3167",
+   "match": true
+  },
+  "input/investigation_alerts.csv": {
+   "rows": 187,
+   "sha256_run1": "6bf0699ac56660eb00f59ec81c919f16fb26ff9f27ae33482a55c6c3451864f5",
+   "sha256_run2": "6bf0699ac56660eb00f59ec81c919f16fb26ff9f27ae33482a55c6c3451864f5",
+   "match": true
+  },
+  "input/investigation_events.csv": {
+   "rows": 267,
+   "sha256_run1": "12fc3bb2f28ee6c1b1cb3e8886d1fa586f2b78ad4419ef3e751bcb48edfacbde",
+   "sha256_run2": "12fc3bb2f28ee6c1b1cb3e8886d1fa586f2b78ad4419ef3e751bcb48edfacbde",
+   "match": true
+  },
+  "input/investigations.csv": {
+   "rows": 89,
+   "sha256_run1": "3690b3e09edbe2010d1855e70cf79254c7ab6571c3ab35c550ba21a83230abf1",
+   "sha256_run2": "3690b3e09edbe2010d1855e70cf79254c7ab6571c3ab35c550ba21a83230abf1",
+   "match": true
+  },
+  "input/promotion_skus.csv": {
+   "rows": 2592,
+   "sha256_run1": "d83ec907da7b568a8598ab3e4e427916ce39e89d11b28e5b1ac4b91aa65ced46",
+   "sha256_run2": "d83ec907da7b568a8598ab3e4e427916ce39e89d11b28e5b1ac4b91aa65ced46",
+   "match": true
+  },
+  "input/promotions.csv": {
+   "rows": 100,
+   "sha256_run1": "f7057484524652ea58c8bf249fe7ba7e7725177a0bfa0ac2ce34c8fe6f6732b6",
+   "sha256_run2": "f7057484524652ea58c8bf249fe7ba7e7725177a0bfa0ac2ce34c8fe6f6732b6",
+   "match": true
+  },
+  "input/returns.csv": {
+   "rows": 70800,
+   "sha256_run1": "7f218eb1e32df893156260ebf053d6a8c155e3de245e82a4e18a17a81d7f90b8",
+   "sha256_run2": "7f218eb1e32df893156260ebf053d6a8c155e3de245e82a4e18a17a81d7f90b8",
+   "match": true
+  },
+  "input/shifts.csv": {
+   "rows": 108600,
+   "sha256_run1": "f4e9f0b7485632ff4142835d8bb105becd456a2c5a518c76f3082570c548400c",
+   "sha256_run2": "f4e9f0b7485632ff4142835d8bb105becd456a2c5a518c76f3082570c548400c",
+   "match": true
+  },
+  "input/shrinkage_alerts.csv": {
+   "rows": 735,
+   "sha256_run1": "c86822cd80d548a6da53f7b78068bc7a8c970ddfa720b870ab686936bc88b264",
+   "sha256_run2": "c86822cd80d548a6da53f7b78068bc7a8c970ddfa720b870ab686936bc88b264",
+   "match": true
+  },
+  "input/skus.csv": {
+   "rows": 5000,
+   "sha256_run1": "d66b7cbe9ac40008040a7c966b9bed28b559f7f21314b5a0977600cd73f2d3fc",
+   "sha256_run2": "d66b7cbe9ac40008040a7c966b9bed28b559f7f21314b5a0977600cd73f2d3fc",
+   "match": true
+  },
+  "input/store_skus.csv": {
+   "rows": 104000,
+   "sha256_run1": "0f0448af73d6220357bf997946a701f7c0578edea78b4022e01360d377f8443c",
+   "sha256_run2": "0f0448af73d6220357bf997946a701f7c0578edea78b4022e01360d377f8443c",
+   "match": true
+  },
+  "input/stores.csv": {
+   "rows": 100,
+   "sha256_run1": "0a7a699bfa736b9991f85042bc96639ce9408b5d202bd3715554a01e16870d6c",
+   "sha256_run2": "0a7a699bfa736b9991f85042bc96639ce9408b5d202bd3715554a01e16870d6c",
+   "match": true
+  }
+ }
+}

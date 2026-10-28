@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+# the full 1M-row dataset is regenerated from the fixed seed; do not commit it
+data/full/
+data/repro_*/
+*.db

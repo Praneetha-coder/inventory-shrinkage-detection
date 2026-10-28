@@ -1,0 +1,176 @@
+{
+ "generator_command": "python run.py starter   (equivalent: cd src && python -m shrinkage generate --profile starter --out ../data/starter)",
+ "config": {
+  "seed": 20261022,
+  "n_stores": 10,
+  "n_skus": 500,
+  "n_movements": 20000,
+  "n_counts": 500,
+  "skus_per_store": 200,
+  "start_date": "2026-01-01",
+  "days": 181,
+  "as_of_days": 212,
+  "year": 2026
+ },
+ "fixed_seed": 20261022,
+ "python": "3.12.2",
+ "numpy": "2.5.4",
+ "pandas": "3.1.0",
+ "platform": "macOS-26.4.1-arm64-arm-64bit",
+ "runtime_seconds": 1.3,
+ "external_data_sources": [],
+ "provenance": "100% synthetic. No external, public, personal or confidential data was used. Schema ideas are inspired by generic retail inventory-shrink concepts only (no licensed dataset ingested).",
+ "validation_passed": "203/203",
+ "files": {
+  "evaluation_metrics.json": {
+   "bytes": 2237,
+   "sha256": "59f7a1fa1df9e214c794297b4c3d0a8a727c38cfcb1c8b72fb60f536683a4336",
+   "rows": null
+  },
+  "evaluation_metrics.md": {
+   "bytes": 1098,
+   "sha256": "941427a8fb441109e0c1a8b0a257da1431ef7b4ab22134db8b822dcee81f8d43",
+   "rows": null
+  },
+  "reproducibility_report.json": {
+   "bytes": 6644,
+   "sha256": "18914e5a1987ef00ee8e9299c3db0097b0e47e46214c57bfe1dd54ad699d48b1",
+   "rows": null
+  },
+  "validation_summary.json": {
+   "bytes": 30076,
+   "sha256": "d6fdf5867a3aaf6e650d313ba8b92873f4977d86197c2755211ba691e6c0aab0",
+   "rows": null
+  },
+  "validation_summary.md": {
+   "bytes": 18283,
+   "sha256": "a8b3db5660a0a0bef01165473fc0c241efd77080f2674c984645ecea8f586ea3",
+   "rows": null
+  },
+  "input/alert_evidence.csv": {
+   "bytes": 11220,
+   "sha256": "13959b50278c912c5a73836e384f729446344f31a825f294e65924604b60488c",
+   "rows": 224
+  },
+  "input/alert_status_events.csv": {
+   "bytes": 21644,
+   "sha256": "07ab8715cbbdf0087ed7d9dbe1b0f8b4c846a7db93ab815f0264d327b0eeff3a",
+   "rows": 205
+  },
+  "input/cycle_counts.csv": {
+   "bytes": 69412,
+   "sha256": "0d4cb425a01da95cc1a49a3c20b435b958adc15655ef9d4c1cb7fe3e4da68017",
+   "rows": 500
+  },
+  "input/employee_roles.csv": {
+   "bytes": 6374,
+   "sha256": "ab40b8f983cac5ceaff454c488e642a4d1c090151f3f85495a965d771616a8e2",
+   "rows": 96
+  },
+  "input/employees.csv": {
+   "bytes": 3534,
+   "sha256": "9f7404f08532ebf3cdc1b26df19d6bfa722ad86fb251b336dcf6fd9350b11a14",
+   "rows": 84
+  },
+  "input/inventory_movements.csv": {
+   "bytes": 2509233,
+   "sha256": "1c0d3a68b76250413c161a8c5690465a0c98f4dfdfd5dc764c620ea07c30adde",
+   "rows": 20000
+  },
+  "input/investigation_alerts.csv": {
+   "bytes": 1306,
+   "sha256": "261d6209379738d2c914ee5af78dab677d6a8c63bdf071570fc370c9ea6c33a4",
+   "rows": 40
+  },
+  "input/investigation_events.csv": {
+   "bytes": 4120,
+   "sha256": "172e7f422f485f6659e2b67b4a49ab5958dcceb636129107dc579c9fd30622ea",
+   "rows": 39
+  },
+  "input/investigations.csv": {
+   "bytes": 2703,
+   "sha256": "e4a45c7abefbc1fe08bd2286cee2eb8832f64d99ff91b4dad5b3b6185949ab55",
+   "rows": 13
+  },
+  "input/promotion_skus.csv": {
+   "bytes": 1220,
+   "sha256": "81e5e52d63caebfea48ca7b735c5473514615d1ec65309a8e9474c424872c9ec",
+   "rows": 50
+  },
+  "input/promotions.csv": {
+   "bytes": 836,
+   "sha256": "50c39f37e6a96617d9cee8919b0d8a83b7f776e14437daad3cba9aec113ea7a4",
+   "rows": 10
+  },
+  "input/returns.csv": {
+   "bytes": 222590,
+   "sha256": "7c4d4128281fdee306e80c239c2d4f259fc05a2685d339fc13b39e2cf3b0e747",
+   "rows": 1416
+  },
+  "input/shifts.csv": {
+   "bytes": 1270709,
+   "sha256": "79ea4502658fff4ebaeca3efe3e6ffd881cfafc4e14807d4336f2f68835e48b9",
+   "rows": 10860
+  },
+  "input/shrinkage_alerts.csv": {
+   "bytes": 27929,
+   "sha256": "8e01a1666d0eca058f21845252c38c8de552b17ebd0c32c6e11c084c64bd7c8b",
+   "rows": 72
+  },
+  "input/skus.csv": {
+   "bytes": 36433,
+   "sha256": "fd2f8b3abbea92d3008a0a5fe7f71634ae5490653b034c5c18fd1678e6d855fd",
+   "rows": 500
+  },
+  "input/store_skus.csv": {
+   "bytes": 130499,
+   "sha256": "9544b13f4996a803818cf509b46935102de1a3defcfe4e92066a11b06a87e2be",
+   "rows": 2200
+  },
+  "input/stores.csv": {
+   "bytes": 918,
+   "sha256": "c3397a07859cf5a77def7756359d16d9707803da777439330dbb00e7a57ae7a1",
+   "rows": 10
+  },
+  "ground_truth/ground_truth_alert_labels.csv": {
+   "bytes": 4672,
+   "sha256": "84f8eb6b9ed353bfac691ced455681e35afea0b16b2f485713d364128e713b66",
+   "rows": 72
+  },
+  "ground_truth/ground_truth_cases.csv": {
+   "bytes": 10384,
+   "sha256": "1a791118fc5613ff00837c4d8dd4f94d32f1ced55f1c98c31033854c048576ce",
+   "rows": 41
+  },
+  "ground_truth/ground_truth_cases.json": {
+   "bytes": 21666,
+   "sha256": "9ec4f24bc88d949618b5d7469dccacffe220463fab15978c6fae3b2e8eb21779",
+   "rows": null
+  },
+  "ground_truth/ground_truth_count_causes.csv": {
+   "bytes": 16400,
+   "sha256": "8d1f33a2f87cacbdb73509753f9f3ff745f9791ea7a703cb9fdaad6af3072e2f",
+   "rows": 500
+  },
+  "ground_truth/ground_truth_links.csv": {
+   "bytes": 9216,
+   "sha256": "24e80b95f16dcb392d002875620d53b37a21d765b559423013746da8a0eabfde",
+   "rows": 243
+  },
+  "sql/schema.sql": {
+   "bytes": 7621,
+   "sha256": "e0abbc4ddc74117c36bf1a1018759093d55b20c06b3efa090286310b7857f1d1",
+   "rows": null
+  },
+  "sql/schema_ground_truth.sql": {
+   "bytes": 1242,
+   "sha256": "133b513d28920598f5b94ac0c30f4f0532b1e4f2a91dd8b181725b922887f5b1",
+   "rows": null
+  },
+  "sql/seed_data.sql": {
+   "bytes": 6692088,
+   "sha256": "96a6f69a47ba61a2f8ac401bc79af3216aadc2c22e58638d431467b5dcaaa995",
+   "rows": null
+  }
+ }
+}
